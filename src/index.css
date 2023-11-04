@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --padding-x: 3rem;
+  --default-color: #222f47;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  letter-spacing: .025em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+
+  width: 100vw;
+  height: 100px;
+  background-color: #21d4fd;
+  display: flex;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
+  font-size: 24px;
+  font-weight: 700;
+  gap: 0.5rem;
+  letter-spacing: .3px;
+  align-items: center;
+  padding: 12px 13rem;
+  position: relative;
+
+}
+
+.banner {
+  align-items: center;
+  background-color: #21d4fd;
+  background-image: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  height: 25rem;
+  justify-content: space-between;
+  padding: 0 3rem;
+  width: 100vw;
+}
+
+/* Sideabar */
+aside {
+
+  float: left;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding: 13rem 3rem;
+}
+
+aside>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+}
+
+aside>ul>li>a {
+  text-decoration: none;
+}
+
+aside>ul>li>a:hover {
+  color: #21d4fd;
+  /* border-bottom: 2px solid green; */
+}
+
+/* Card Component */
+.card {
+
+  background-color: #fff;
+  width: 23rem;
+  height: 130px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  padding: 16px;
+
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.card:hover {
+  width: 23.2rem;
+  height: 133px;
+
+}
+
+.card-content {
+  display: flex;
+  padding: 8px 0 0;
+  gap: 16px;
+}
+
+.card-content>.logo {
+  border-radius: 8px;
+  display: flex;
+  padding: 5px;
+  border: 1px solid rgb(247, 244, 244);
+}
+.card-content>.logo>img {
+  border-radius: 8px;
+}
+
+
+/* description */
+.description h1 {
+  font-size: 24px;
+}
+
+.description p {
+  color: #86868d;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+/* Main Content */
+.main-container {
+  float: left;
+  width: 70%;
+  height: 100vh;
+  background: #222f47;
+  padding: 13rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+
+}
